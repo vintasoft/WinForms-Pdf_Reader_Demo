@@ -560,7 +560,7 @@ namespace DemosCommonCode.Pdf
         private void rotateXObjectButton_Click(object sender, EventArgs e)
         {
             PdfContentXObject xObject = GetSelectedContentXObject();
-            AffineMatrix transfrom = new AffineMatrix();
+            AffineMatrix transform = new AffineMatrix();
             double centerX = 0;
             double centerY = 0;
             if (xObject.XObjectResource is PdfImageResource)
@@ -574,12 +574,12 @@ namespace DemosCommonCode.Pdf
                 centerX = formBBox.X + formBBox.Width / 2;
                 centerY = formBBox.Y + formBBox.Height / 2;
             }
-            transfrom.RotateAt((double)rotationAngleNumericUpDown.Value, centerX, centerY);
-            TransformXObject(xObject, transfrom);
+            transform.RotateAt((double)rotationAngleNumericUpDown.Value, centerX, centerY);
+            TransformXObject(xObject, transform);
         }
 
         /// <summary>
-        /// Transforms the XObject use secified transfrom.
+        /// Transforms the XObject use secified transform.
         /// </summary>
         /// <param name="xObject">The XObject.</param>
         /// <param name="transform">The transform.</param>

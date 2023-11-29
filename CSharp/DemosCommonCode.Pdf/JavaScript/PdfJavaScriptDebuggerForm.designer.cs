@@ -46,10 +46,12 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.debugModecheckBox = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // consoleTextBox
@@ -84,7 +86,8 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // watchResultPropertyGrid
             // 
-            this.watchResultPropertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.watchResultPropertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.watchResultPropertyGrid.HelpVisible = false;
             this.watchResultPropertyGrid.Location = new System.Drawing.Point(6, 45);
@@ -95,7 +98,8 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // expressionTextBox
             // 
-            this.expressionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.expressionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.expressionTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.expressionTextBox.Location = new System.Drawing.Point(11, 19);
@@ -109,7 +113,8 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // evaluateResultTextBox
             // 
-            this.evaluateResultTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.evaluateResultTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.evaluateResultTextBox.Location = new System.Drawing.Point(6, 19);
             this.evaluateResultTextBox.Multiline = true;
@@ -120,9 +125,9 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // topMostCheckBox
             // 
-            this.topMostCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.topMostCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.topMostCheckBox.AutoSize = true;
-            this.topMostCheckBox.Location = new System.Drawing.Point(311, 10);
+            this.topMostCheckBox.Location = new System.Drawing.Point(305, 6);
             this.topMostCheckBox.Name = "topMostCheckBox";
             this.topMostCheckBox.Size = new System.Drawing.Size(68, 17);
             this.topMostCheckBox.TabIndex = 6;
@@ -184,7 +189,9 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // clearConsoleButton
             // 
-            this.clearConsoleButton.Location = new System.Drawing.Point(3, 6);
+            this.clearConsoleButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.clearConsoleButton.AutoSize = true;
+            this.clearConsoleButton.Location = new System.Drawing.Point(3, 3);
             this.clearConsoleButton.Name = "clearConsoleButton";
             this.clearConsoleButton.Size = new System.Drawing.Size(89, 23);
             this.clearConsoleButton.TabIndex = 10;
@@ -194,9 +201,11 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // clearEngineLogButton
             // 
-            this.clearEngineLogButton.Location = new System.Drawing.Point(98, 6);
+            this.clearEngineLogButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.clearEngineLogButton.AutoSize = true;
+            this.clearEngineLogButton.Location = new System.Drawing.Point(98, 3);
             this.clearEngineLogButton.Name = "clearEngineLogButton";
-            this.clearEngineLogButton.Size = new System.Drawing.Size(89, 23);
+            this.clearEngineLogButton.Size = new System.Drawing.Size(97, 23);
             this.clearEngineLogButton.TabIndex = 11;
             this.clearEngineLogButton.Text = "Clear Engine Log";
             this.clearEngineLogButton.UseVisualStyleBackColor = true;
@@ -234,9 +243,9 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // debugModecheckBox
             // 
-            this.debugModecheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.debugModecheckBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.debugModecheckBox.AutoSize = true;
-            this.debugModecheckBox.Location = new System.Drawing.Point(217, 9);
+            this.debugModecheckBox.Location = new System.Drawing.Point(210, 6);
             this.debugModecheckBox.Name = "debugModecheckBox";
             this.debugModecheckBox.Size = new System.Drawing.Size(88, 17);
             this.debugModecheckBox.TabIndex = 14;
@@ -244,17 +253,38 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.debugModecheckBox.UseVisualStyleBackColor = true;
             this.debugModecheckBox.CheckedChanged += new System.EventHandler(this.debugModecheckBox_CheckedChanged);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.clearConsoleButton, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.clearEngineLogButton, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.debugModecheckBox, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.topMostCheckBox, 3, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(376, 29);
+            this.tableLayoutPanel1.TabIndex = 15;
+            // 
             // PdfJavaScriptDebuggerForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(384, 562);
-            this.Controls.Add(this.debugModecheckBox);
-            this.Controls.Add(this.clearEngineLogButton);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.clearConsoleButton);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.topMostCheckBox);
             this.Name = "PdfJavaScriptDebuggerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PDF JavaScript Interpreter Debugger";
@@ -266,6 +296,8 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,5 +321,6 @@ namespace DemosCommonCode.Pdf.JavaScript
         private System.Windows.Forms.Button evaluateButton;
         private System.Windows.Forms.CheckBox debugModecheckBox;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
