@@ -47,11 +47,13 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.debugModecheckBox = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // consoleTextBox
@@ -65,7 +67,7 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.consoleTextBox.Name = "consoleTextBox";
             this.consoleTextBox.ReadOnly = true;
             this.consoleTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.consoleTextBox.Size = new System.Drawing.Size(364, 130);
+            this.consoleTextBox.Size = new System.Drawing.Size(356, 125);
             this.consoleTextBox.TabIndex = 1;
             this.consoleTextBox.WordWrap = false;
             // 
@@ -80,7 +82,7 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.logTextBox.Name = "logTextBox";
             this.logTextBox.ReadOnly = true;
             this.logTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.logTextBox.Size = new System.Drawing.Size(364, 101);
+            this.logTextBox.Size = new System.Drawing.Size(356, 101);
             this.logTextBox.TabIndex = 2;
             this.logTextBox.WordWrap = false;
             // 
@@ -92,7 +94,7 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.watchResultPropertyGrid.HelpVisible = false;
             this.watchResultPropertyGrid.Location = new System.Drawing.Point(6, 45);
             this.watchResultPropertyGrid.Name = "watchResultPropertyGrid";
-            this.watchResultPropertyGrid.Size = new System.Drawing.Size(349, 90);
+            this.watchResultPropertyGrid.Size = new System.Drawing.Size(345, 90);
             this.watchResultPropertyGrid.TabIndex = 7;
             this.watchResultPropertyGrid.ToolbarVisible = false;
             // 
@@ -106,7 +108,7 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.expressionTextBox.Multiline = true;
             this.expressionTextBox.Name = "expressionTextBox";
             this.expressionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.expressionTextBox.Size = new System.Drawing.Size(325, 69);
+            this.expressionTextBox.Size = new System.Drawing.Size(321, 63);
             this.expressionTextBox.TabIndex = 0;
             this.expressionTextBox.WordWrap = false;
             this.expressionTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.watchTextBox_KeyDown);
@@ -120,14 +122,14 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.evaluateResultTextBox.Multiline = true;
             this.evaluateResultTextBox.Name = "evaluateResultTextBox";
             this.evaluateResultTextBox.ReadOnly = true;
-            this.evaluateResultTextBox.Size = new System.Drawing.Size(350, 20);
+            this.evaluateResultTextBox.Size = new System.Drawing.Size(346, 20);
             this.evaluateResultTextBox.TabIndex = 5;
             // 
             // topMostCheckBox
             // 
             this.topMostCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.topMostCheckBox.AutoSize = true;
-            this.topMostCheckBox.Location = new System.Drawing.Point(305, 6);
+            this.topMostCheckBox.Location = new System.Drawing.Point(303, 6);
             this.topMostCheckBox.Name = "topMostCheckBox";
             this.topMostCheckBox.Size = new System.Drawing.Size(68, 17);
             this.topMostCheckBox.TabIndex = 6;
@@ -141,24 +143,25 @@ namespace DemosCommonCode.Pdf.JavaScript
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.watchResultPropertyGrid);
             this.groupBox1.Controls.Add(this.evaluateResultTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(5, 94);
+            this.groupBox1.Location = new System.Drawing.Point(5, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(362, 141);
+            this.groupBox1.Size = new System.Drawing.Size(358, 141);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Result";
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.AutoSize = true;
+            this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.Controls.Add(this.deleteButton);
             this.groupBox2.Controls.Add(this.evaluateButton);
             this.groupBox2.Controls.Add(this.expressionTextBox);
             this.groupBox2.Controls.Add(this.groupBox1);
-            this.groupBox2.Location = new System.Drawing.Point(3, 319);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(8, 319);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(372, 240);
+            this.groupBox2.Size = new System.Drawing.Size(368, 234);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Evaluate Expression";
@@ -168,9 +171,9 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.deleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteButton.Image = ((System.Drawing.Image)(resources.GetObject("deleteButton.Image")));
-            this.deleteButton.Location = new System.Drawing.Point(342, 61);
+            this.deleteButton.Location = new System.Drawing.Point(338, 61);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(24, 26);
+            this.deleteButton.Size = new System.Drawing.Size(24, 20);
             this.deleteButton.TabIndex = 10;
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -180,9 +183,9 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.evaluateButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.evaluateButton.Image = ((System.Drawing.Image)(resources.GetObject("evaluateButton.Image")));
-            this.evaluateButton.Location = new System.Drawing.Point(342, 19);
+            this.evaluateButton.Location = new System.Drawing.Point(338, 19);
             this.evaluateButton.Name = "evaluateButton";
-            this.evaluateButton.Size = new System.Drawing.Size(24, 37);
+            this.evaluateButton.Size = new System.Drawing.Size(24, 31);
             this.evaluateButton.TabIndex = 9;
             this.evaluateButton.UseVisualStyleBackColor = true;
             this.evaluateButton.Click += new System.EventHandler(this.evaluateButton_Click);
@@ -205,7 +208,7 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.clearEngineLogButton.AutoSize = true;
             this.clearEngineLogButton.Location = new System.Drawing.Point(98, 3);
             this.clearEngineLogButton.Name = "clearEngineLogButton";
-            this.clearEngineLogButton.Size = new System.Drawing.Size(97, 23);
+            this.clearEngineLogButton.Size = new System.Drawing.Size(96, 23);
             this.clearEngineLogButton.TabIndex = 11;
             this.clearEngineLogButton.Text = "Clear Engine Log";
             this.clearEngineLogButton.UseVisualStyleBackColor = true;
@@ -213,25 +216,26 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.AutoSize = true;
+            this.groupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox3.Controls.Add(this.consoleTextBox);
-            this.groupBox3.Location = new System.Drawing.Point(3, 32);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Location = new System.Drawing.Point(8, 38);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(376, 155);
+            this.groupBox3.Size = new System.Drawing.Size(368, 149);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Console Output";
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.AutoSize = true;
+            this.groupBox4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox4.Controls.Add(this.logTextBox);
-            this.groupBox4.Location = new System.Drawing.Point(3, 193);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Location = new System.Drawing.Point(8, 193);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(376, 126);
+            this.groupBox4.Size = new System.Drawing.Size(368, 120);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "JavaScript Engine Log";
@@ -245,7 +249,7 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             this.debugModecheckBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.debugModecheckBox.AutoSize = true;
-            this.debugModecheckBox.Location = new System.Drawing.Point(210, 6);
+            this.debugModecheckBox.Location = new System.Drawing.Point(208, 6);
             this.debugModecheckBox.Name = "debugModecheckBox";
             this.debugModecheckBox.Size = new System.Drawing.Size(88, 17);
             this.debugModecheckBox.TabIndex = 14;
@@ -255,10 +259,8 @@ namespace DemosCommonCode.Pdf.JavaScript
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -268,23 +270,41 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.tableLayoutPanel1.Controls.Add(this.clearEngineLogButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.debugModecheckBox, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.topMostCheckBox, 3, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 5);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(376, 29);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(374, 30);
             this.tableLayoutPanel1.TabIndex = 15;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.groupBox3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.groupBox2, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.groupBox4, 0, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 240F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(384, 561);
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // PdfJavaScriptDebuggerForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(384, 562);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(384, 561);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.MinimumSize = new System.Drawing.Size(400, 600);
             this.Name = "PdfJavaScriptDebuggerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PDF JavaScript Interpreter Debugger";
@@ -298,8 +318,9 @@ namespace DemosCommonCode.Pdf.JavaScript
             this.groupBox4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -322,5 +343,6 @@ namespace DemosCommonCode.Pdf.JavaScript
         private System.Windows.Forms.CheckBox debugModecheckBox;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
