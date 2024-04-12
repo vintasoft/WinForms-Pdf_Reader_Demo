@@ -82,7 +82,7 @@ namespace DemosCommonCode.Pdf.JavaScript
         #region UI
 
         /// <summary>
-        /// Handles the KeyDown event of WatchTextBox object.
+        /// Handles the KeyDown event of watchTextBox object.
         /// </summary>
         private void watchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -96,7 +96,7 @@ namespace DemosCommonCode.Pdf.JavaScript
         }
 
         /// <summary>
-        /// Handles the CheckedChanged event of DebugModecheckBox object.
+        /// Handles the CheckedChanged event of debugModecheckBox object.
         /// </summary>
         private void debugModecheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -108,7 +108,7 @@ namespace DemosCommonCode.Pdf.JavaScript
         }
 
         /// <summary>
-        /// Handles the CheckedChanged event of TopMostCheckBox object.
+        /// Handles the CheckedChanged event of topMostCheckBox object.
         /// </summary>
         private void topMostCheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -120,7 +120,7 @@ namespace DemosCommonCode.Pdf.JavaScript
         }
 
         /// <summary>
-        /// Handles the Click event of ClearConsoleButton object.
+        /// Handles the Click event of clearConsoleButton object.
         /// </summary>
         private void clearConsoleButton_Click(object sender, EventArgs e)
         {
@@ -129,7 +129,7 @@ namespace DemosCommonCode.Pdf.JavaScript
         }
 
         /// <summary>
-        /// Handles the Click event of ClearEngineLog object.
+        /// Handles the Click event of clearEngineLog object.
         /// </summary>
         private void clearEngineLog_Click(object sender, EventArgs e)
         {
@@ -138,7 +138,7 @@ namespace DemosCommonCode.Pdf.JavaScript
         }
 
         /// <summary>
-        /// Handles the Click event of EvaluateButton object.
+        /// Handles the Click event of evaluateButton object.
         /// </summary>
         private void evaluateButton_Click(object sender, EventArgs e)
         {
@@ -147,7 +147,7 @@ namespace DemosCommonCode.Pdf.JavaScript
         }
 
         /// <summary>
-        /// Handles the Click event of DeleteButton object.
+        /// Handles the Click event of deleteButton object.
         /// </summary>
         private void deleteButton_Click(object sender, EventArgs e)
         {

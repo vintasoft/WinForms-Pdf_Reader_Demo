@@ -99,7 +99,7 @@ namespace DemosCommonCode.Pdf
         #region UI
 
         /// <summary>
-        /// Handles the CheckedChanged event of ShowAllLayersCheckBox object.
+        /// Handles the CheckedChanged event of showAllLayersCheckBox object.
         /// </summary>
         private void showAllLayersCheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -115,7 +115,7 @@ namespace DemosCommonCode.Pdf
         }
 
         /// <summary>
-        /// Handles the Click event of OkButton object.
+        /// Handles the Click event of okButton object.
         /// </summary>
         private void okButton_Click(object sender, EventArgs e)
         {
@@ -125,7 +125,7 @@ namespace DemosCommonCode.Pdf
         }
 
         /// <summary>
-        /// Handles the SelectedIndexChanged event of ConfigurationsComboBox object.
+        /// Handles the SelectedIndexChanged event of configurationsComboBox object.
         /// </summary>
         private void configurationsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
