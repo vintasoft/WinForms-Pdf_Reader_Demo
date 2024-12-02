@@ -1,9 +1,12 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
 using Vintasoft.Imaging;
+using Vintasoft.Imaging.Codecs.Decoders;
+using Vintasoft.Imaging.Fonts;
 using Vintasoft.Imaging.Text;
 using Vintasoft.Imaging.Spelling;
 using Vintasoft.Imaging.UI;
@@ -33,8 +36,6 @@ using DemosCommonCode.Pdf;
 using DemosCommonCode.Pdf.JavaScript;
 using DemosCommonCode.Pdf.Security;
 using DemosCommonCode.Spelling;
-using Vintasoft.Imaging.Codecs.Decoders;
-using Vintasoft.Imaging.Fonts;
 
 namespace PdfReaderDemo
 {
@@ -303,6 +304,7 @@ namespace PdfReaderDemo
         /// <summary>
         /// Gets or sets the current visual tool.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal VisualTool CurrentTool
         {
             get

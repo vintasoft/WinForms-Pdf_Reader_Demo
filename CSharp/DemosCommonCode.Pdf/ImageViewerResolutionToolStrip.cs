@@ -1,14 +1,13 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 using Vintasoft.Imaging;
 using Vintasoft.Imaging.Codecs.Decoders;
 using Vintasoft.Imaging.ImageRendering;
-using Vintasoft.Imaging.Pdf;
 using Vintasoft.Imaging.UI;
 
 using DemosCommonCode.Imaging;
-using System.ComponentModel;
 
 
 namespace DemosCommonCode.Pdf
@@ -72,6 +71,7 @@ namespace DemosCommonCode.Pdf
         /// <value>
         /// Default value is <b>null</b>.
         /// </value>        
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public ImageViewer ImageViewer
         {
             get
@@ -106,6 +106,7 @@ namespace DemosCommonCode.Pdf
         /// </summary>
         [Browsable(false)]
         [ReadOnly(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int[] Resolutions
         {
             get
@@ -147,6 +148,7 @@ namespace DemosCommonCode.Pdf
         /// </value>
         [Browsable(false)]
         [ReadOnly(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool UseDynamicRendering
         {
             get
