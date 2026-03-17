@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using Vintasoft.Imaging.Pdf;
 using Vintasoft.Imaging.Pdf.Tree.OptionalContent;
 
-namespace DemosCommonCode.Pdf
+namespace CommonCode.Pdf
 {
     /// <summary>
     /// A form that allows to remove optional content from PDF document.

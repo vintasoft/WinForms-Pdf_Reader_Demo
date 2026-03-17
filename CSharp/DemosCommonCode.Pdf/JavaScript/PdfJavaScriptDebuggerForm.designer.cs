@@ -1,4 +1,4 @@
-namespace DemosCommonCode.Pdf.JavaScript
+﻿namespace CommonCode.Pdf.JavaScript
 {
     partial class PdfJavaScriptDebuggerForm
     {

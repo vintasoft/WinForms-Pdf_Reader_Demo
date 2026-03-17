@@ -9,7 +9,7 @@ using Vintasoft.Imaging.Pdf.Tree.Annotations;
 using Vintasoft.Imaging.Drawing;
 using Vintasoft.Imaging.Text;
 
-namespace DemosCommonCode.Pdf
+namespace CommonCode.Pdf
 {
     /// <summary>
     /// Class that provides access to the rendering algorithm of PDF content.

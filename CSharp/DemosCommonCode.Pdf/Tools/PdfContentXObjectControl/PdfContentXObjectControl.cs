@@ -14,9 +14,10 @@ using Vintasoft.Imaging.Pdf.UI;
 using Vintasoft.Imaging.UI;
 using Vintasoft.Imaging.UI.VisualTools;
 
-using DemosCommonCode.Imaging;
+using CommonCode.Imaging;
+using CommonCode.Imaging.Codecs;
 
-namespace DemosCommonCode.Pdf
+namespace CommonCode.Pdf
 {
     /// <summary>
     /// A control that allows to extract image-resources or form-resources from PDF page.
@@ -499,7 +500,7 @@ namespace DemosCommonCode.Pdf
             {
                 SaveImageFileForm.SaveImageToFile(
                     image, 
-                    DemosCommonCode.Imaging.Codecs.PluginsEncoderFactory.Default);
+                    PluginsEncoderFactory.Default);
             }
         }
 

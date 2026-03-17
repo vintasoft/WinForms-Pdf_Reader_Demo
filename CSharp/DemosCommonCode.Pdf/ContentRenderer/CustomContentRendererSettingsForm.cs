@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using Vintasoft.Imaging.ImageProcessing;
 using Vintasoft.Imaging.ImageProcessing.Effects;
 
-namespace DemosCommonCode.Pdf
+namespace CommonCode.Pdf
 {
     /// <summary>
     /// A form that allows to view and edit settings of custom content renderer.

@@ -1,4 +1,4 @@
-namespace PdfReaderDemo
+﻿namespace PdfReaderDemo
 {
     partial class MainForm
     {
@@ -135,11 +135,11 @@ namespace PdfReaderDemo
             this.imageInfoLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStripPanel1 = new System.Windows.Forms.ToolStripPanel();
-            this.viewerToolStrip = new DemosCommonCode.Imaging.ImageViewerToolStrip();
+            this.viewerToolStrip = new CommonCode.Imaging.ImageViewerToolStrip();
             this.imageViewer1 = new Vintasoft.Imaging.UI.ImageViewer();
-            this.visualToolsToolStrip1 = new DemosCommonCode.Imaging.VisualToolsToolStrip();
-            this.findTextToolStrip1 = new DemosCommonCode.Imaging.FindTextToolStrip();
-            this.resolutionToolStrip1 = new DemosCommonCode.Pdf.ImageViewerResolutionToolStrip();
+            this.visualToolsToolStrip1 = new CommonCode.Imaging.VisualToolsToolStrip();
+            this.findTextToolStrip1 = new CommonCode.Imaging.FindTextToolStrip();
+            this.resolutionToolStrip1 = new CommonCode.Pdf.ImageViewerResolutionToolStrip();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.imagePrintDocument1 = new Vintasoft.Imaging.Pdf.Print.PdfPrintDocument();
@@ -148,11 +148,11 @@ namespace PdfReaderDemo
             this.pagesTabPage = new System.Windows.Forms.TabPage();
             this.thumbnailViewer1 = new Vintasoft.Imaging.UI.ThumbnailViewer();
             this.bookmarksTabPage = new System.Windows.Forms.TabPage();
-            this.documentBookmarks = new DemosCommonCode.Pdf.BookmarkTreeView();
+            this.documentBookmarks = new CommonCode.Pdf.BookmarkTreeView();
             this.textRegionTabPage = new System.Windows.Forms.TabPage();
-            this.pdfTextSelectionControl1 = new DemosCommonCode.Imaging.TextSelectionControl();
+            this.pdfTextSelectionControl1 = new CommonCode.Imaging.TextSelectionControl();
             this.imageFormExtractionTabPage = new System.Windows.Forms.TabPage();
-            this.pdfContentXObjectControl1 = new DemosCommonCode.Pdf.PdfContentXObjectControl();
+            this.pdfContentXObjectControl1 = new CommonCode.Pdf.PdfContentXObjectControl();
             this.pageSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.menuStrip1.SuspendLayout();
@@ -1274,7 +1274,7 @@ namespace PdfReaderDemo
         private System.Windows.Forms.ToolStripStatusLabel runtimeMessagesLabel;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private DemosCommonCode.Imaging.ImageViewerToolStrip viewerToolStrip;
+        private CommonCode.Imaging.ImageViewerToolStrip viewerToolStrip;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem documentToolStripMenuItem;
@@ -1293,7 +1293,7 @@ namespace PdfReaderDemo
         private System.Windows.Forms.ToolStripMenuItem embeddedFilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem securityPropertiesToolStripMenuItem;
-        private DemosCommonCode.Pdf.BookmarkTreeView documentBookmarks;
+        private CommonCode.Pdf.BookmarkTreeView documentBookmarks;
         private System.Windows.Forms.ToolStripMenuItem thumbnailViewerSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem useEmbeddedThumbnailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imageViewerSettingsToolStripMenuItem;
@@ -1320,9 +1320,9 @@ namespace PdfReaderDemo
         private System.Windows.Forms.ToolStripMenuItem enableJavaScriptExecutingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem debuggerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem enableActionsExecutingToolStripMenuItem;
-        private DemosCommonCode.Imaging.FindTextToolStrip findTextToolStrip1;
-        private DemosCommonCode.Pdf.ImageViewerResolutionToolStrip resolutionToolStrip1;
-        private DemosCommonCode.Imaging.TextSelectionControl pdfTextSelectionControl1;
+        private CommonCode.Imaging.FindTextToolStrip findTextToolStrip1;
+        private CommonCode.Pdf.ImageViewerResolutionToolStrip resolutionToolStrip1;
+        private CommonCode.Imaging.TextSelectionControl pdfTextSelectionControl1;
         private System.Windows.Forms.TabPage imageFormExtractionTabPage;
         private System.Windows.Forms.ToolStripMenuItem visualToolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
@@ -1333,7 +1333,7 @@ namespace PdfReaderDemo
         private System.Windows.Forms.ToolStripMenuItem pdfA2bVerifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pdfA3bVerifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getConformanceFromPdfDocumentMetadataToolStripMenuItem;
-        private DemosCommonCode.Pdf.PdfContentXObjectControl pdfContentXObjectControl1;
+        private CommonCode.Pdf.PdfContentXObjectControl pdfContentXObjectControl1;
         private System.Windows.Forms.ToolStripMenuItem imageDisplayModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem singlePageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem twoColumnsToolStripMenuItem;
@@ -1359,7 +1359,7 @@ namespace PdfReaderDemo
         private System.Windows.Forms.ToolStripMenuItem pdfA2aVerifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pdfA3aVerifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem magnifierSettingsToolStripMenuItem;
-        private DemosCommonCode.Imaging.VisualToolsToolStrip visualToolsToolStrip1;
+        private CommonCode.Imaging.VisualToolsToolStrip visualToolsToolStrip1;
         private System.Windows.Forms.ToolStripMenuItem rotateViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rotateClockwiseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rotateCounterclockwiseToolStripMenuItem;

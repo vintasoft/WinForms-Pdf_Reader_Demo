@@ -7,10 +7,10 @@ using Vintasoft.Imaging.Codecs.Decoders;
 using Vintasoft.Imaging.ImageRendering;
 using Vintasoft.Imaging.UI;
 
-using DemosCommonCode.Imaging;
+using CommonCode.Imaging;
 
 
-namespace DemosCommonCode.Pdf
+namespace CommonCode.Pdf
 {
     /// <summary>
     /// Tool strip that allows to changes rendering resolution of image viewer.

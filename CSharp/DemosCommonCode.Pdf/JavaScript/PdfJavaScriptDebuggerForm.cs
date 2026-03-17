@@ -6,7 +6,7 @@ using Vintasoft.Imaging.Pdf;
 using Vintasoft.Imaging.Pdf.Tree;
 using Vintasoft.Imaging.UI;
 
-namespace DemosCommonCode.Pdf.JavaScript
+namespace CommonCode.Pdf.JavaScript
 {
     /// <summary>
     /// A form that allows to debug PDF JavaScript interperter.

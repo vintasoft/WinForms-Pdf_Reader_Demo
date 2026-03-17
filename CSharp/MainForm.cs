@@ -27,15 +27,15 @@ using Vintasoft.Imaging.Pdf.UI;
 using Vintasoft.Imaging.Pdf.UI.Annotations;
 using Vintasoft.Imaging.Pdf.Tree.Annotations;
 
-using DemosCommonCode;
-using DemosCommonCode.Imaging;
-using DemosCommonCode.Imaging.Codecs;
-using DemosCommonCode.Imaging.Codecs.Dialogs;
-using DemosCommonCode.Imaging.ColorManagement;
-using DemosCommonCode.Pdf;
-using DemosCommonCode.Pdf.JavaScript;
-using DemosCommonCode.Pdf.Security;
-using DemosCommonCode.Spelling;
+using CommonCode;
+using CommonCode.Imaging;
+using CommonCode.Imaging.Codecs;
+using CommonCode.Imaging.Codecs.Dialogs;
+using CommonCode.Imaging.ColorManagement;
+using CommonCode.Pdf;
+using CommonCode.Pdf.JavaScript;
+using CommonCode.Pdf.Security;
+using CommonCode.Spelling;
 
 namespace PdfReaderDemo
 {
