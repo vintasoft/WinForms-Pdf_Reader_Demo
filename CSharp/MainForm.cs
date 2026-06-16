@@ -148,6 +148,15 @@ namespace PdfReaderDemo
 
         #region Constructors
 
+        /// <summary>
+        /// Initializes the <see cref="MainForm"/> class.
+        /// </summary>
+        static MainForm()
+        {
+            Jbig2AssemblyLoader.Load();
+            Jpeg2000AssemblyLoader.Load();
+        }
+
         /// <summary> 
         /// Initializes a new instance of the <see cref="MainForm"/> class.
         /// </summary>
@@ -160,9 +169,6 @@ namespace PdfReaderDemo
 
             if (DesignMode)
                 return;
-
-            Jbig2AssemblyLoader.Load();
-            Jpeg2000AssemblyLoader.Load();
 
             resolutionToolStrip1.ImageViewer = imageViewer1;
 
